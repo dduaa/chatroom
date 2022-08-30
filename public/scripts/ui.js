@@ -142,7 +142,7 @@ const OnlineUsersPanel = (function() {
         const currentUser = Authentication.getUser();
         // Add the user one-by-one
         for (const username in onlineUsers) {
-            //console.log(username);
+            console.log(username, currentUser);
             if (username !== currentUser.user.username){
             
             

@@ -15,6 +15,7 @@ const Socket = (function() {
         socket.on("connect", () => {
             // Get the online user list
             socket.emit("get users");
+            console.log('Connected to server successfully');
 
             // Get the chatroom messages
             socket.emit("get messages");

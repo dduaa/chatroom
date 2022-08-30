@@ -1,10 +1,27 @@
 {
+  "name": "chat-room-app",
+  "version": "1.0.0",
+  "description": "chat room demo",
+  "main": "chat_server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon chat_server.js",
-    "start": "node server.js",
-    "initDb": "nodemon initialization.js"
+    "start": "node chat_server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dduaa/chatroom.git"
+  },
+  "keywords": [
+    "real-time",
+    "chatting",
+    "app"
+  ],
+  "author": "DU DONGHONG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dduaa/chatroom/issues"
+  },
+  "homepage": "https://github.com/dduaa/chatroom#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",

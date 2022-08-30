@@ -9,6 +9,7 @@ const Socket = (function() {
 
     // This function connects the server and initializes the socket
     const connect = function() {
+        //socket = io();
         socket = io('https://online-chatting-demo.herokuapp.com/443');
 
         // Wait for the socket to connect successfully

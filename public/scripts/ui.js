@@ -137,20 +137,12 @@ const OnlineUsersPanel = (function() {
 
         // Clear the online users area
         onlineUsersArea.empty();
-
-		// Get the current user
-        const currentUser = Authentication.getUser();
         // Add the user one-by-one
         for (const username in onlineUsers) {
-            console.log(username, currentUser);
-            if (username !== currentUser.user.username){
-            
-            
             onlineUsersArea.append(
                 $("<div ><div id='username-" + username +"'</div></div>")
                     .append(UI.getUserDisplay(onlineUsers[username]))
             );
-            }
         };
     };
 

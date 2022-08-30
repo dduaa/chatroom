@@ -198,7 +198,7 @@ io.on("connection", (socket) => {
 	});
 
 });
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 443;
 httpServer.listen(PORT, () => {
-	console.log("The chat server has started...");
+	console.log(`The chat server has started... working on port ${PORT}`);
 });

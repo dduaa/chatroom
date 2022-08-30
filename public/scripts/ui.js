@@ -133,7 +133,7 @@ const OnlineUsersPanel = (function() {
     }
     // This function updates the online users panel
     const update = function(onlineUsers) {
-        console.log('upload user panel', Object.keys(onlineUsers).length)
+        //console.log('upload user panel', Object.keys(onlineUsers).length)
         const onlineUsersArea = $("#online-users-area");
 
         // Clear the online users area
@@ -219,7 +219,7 @@ const ChatPanel = (function() {
             //console.log(message)
 			addMessage(message);
         }
-        console.log('update chat', (chatroom.length))
+        //console.log('update chat', (chatroom.length))
     };
 
     // This function adds a new message at the end of the chatroom

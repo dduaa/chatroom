@@ -42,7 +42,7 @@ const Authentication = (function() {
 			else if (onError) onError(json.error);
 		})
 		.catch((err) => {
-		  console.log("sign fail!");
+		  //console.log("sign fail!");
 		});
     };
 
@@ -70,7 +70,7 @@ const Authentication = (function() {
 			else if (onError) onError(json.error);
 		})
 		.catch((err) => {
-		  console.log(err);
+		  //console.log(err);
 		});
 
 
@@ -107,7 +107,7 @@ const Authentication = (function() {
 			else if (onError) onError(json.error);
 		})
 		.catch((err) => {
-		  console.log("signout Error!");
+		  //console.log("signout Error!");
 		});
         // Delete when appropriate
         //if (onError) onError("This function is not yet implemented.");

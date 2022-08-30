@@ -68,8 +68,12 @@ const Socket = (function() {
 
     // This function disconnects the socket from the server
     const disconnect = function() {
+        if (socket && socket.connected) {
         socket.disconnect();
-        socket = null;
+        }else{
+            socket = null;
+        }
+       
     };
 
     // This function sends a post message event to the server

@@ -3,11 +3,13 @@ const express = require("express");
 const bcrypt = require("bcrypt");
 const session = require("express-session");
 // Create the Express app
+var cors = require('cors');
 const app = express();
 const {createServer} = require("http");
 const {Server} = require("socket.io");
 const httpServer = createServer(app);
-const io = new Server(httpServer);
+const io = require('socket.io')(httpServer, { cors: { origin: "*" } });
+app.use(cors());
 const mongoose = require("mongoose")
 //midware
 app.use(express.static("public"));
@@ -198,7 +200,7 @@ io.on("connection", (socket) => {
 	});
 
 });
-const PORT = process.env.PORT || 443;
+const PORT = process.env.PORT || 3000;
 httpServer.listen(PORT, () => {
 	console.log(`The chat server has started... working on port ${PORT}`);
 });
